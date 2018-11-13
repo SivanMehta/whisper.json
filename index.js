@@ -28,7 +28,7 @@ Whisper.prototype.process = function (data) {
     return;
   }
 
-  this.stream.setReadable(from(JSON.stringify(data, null, 2)));
+  this.stream.setReadable(from(JSON.stringify(data, null, 2)) + '\n');
 };
 
 
